@@ -8,7 +8,7 @@ test("Can instantiate Employee instance", () => {
 
 test("Can set name via constructor arguments", () => {
     const name = "Alice";
-    const e = new Employee();
+    const e = new Employee(name);
     expect(e.name).toBe(name);
 });
 
