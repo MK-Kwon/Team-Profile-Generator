@@ -8,7 +8,6 @@ const Manager = require("./lib/manager");
 
 let finalTeamArray = [];
 
-// Create a function with inquirer's questions for each position type, run as needed
 function startingPrompt() {
     inquirer.prompt([
         {
@@ -31,8 +30,8 @@ function startingPrompt() {
             const id = 1;
             const email = data.email;
             const officeNumber = data.officeNumber;
-            const minkyung = new Manager(name, id, email, officeNumber);
-            console.log(minkyung);
+            const teamMember = new Manager(name, id, email, officeNumber);
+            finalTeamArray.push(teamMember);
             addTeamMembers();
         });
 
@@ -48,7 +47,6 @@ function startingPrompt() {
             }
         ])
             .then(function(data) {
-                console.log(data.addMemberData);
 
                 switch (data.addMemberData) {
                     case "Yes, add a developer":
@@ -81,10 +79,12 @@ function startingPrompt() {
             .then(function(data){
                 
                 const name = data.name;
+                const id = 2;
                 const email = data.email;
                 const github = data.github;
-                const minkyung = new Developer(name, email, github);
+                const teamMember = new Developer(name, id, email, github);
                 
+                finalTeamArray.push(teamMember);
                 addTeamMembers();
             });
     };
@@ -104,13 +104,19 @@ function startingPrompt() {
             }
         ])
             .then(function(data){
-                
+                const name = data.name;
+                const id = 1;
+                const email = data.email;
+                const school = data.school;
+
+                const teamMember = new Intern(name, id, email, school);
+                finalTeamArray.push(teamMember);
                 addTeamMembers();
             });
     };
 
     function compileTeam() {
-        console.log("complete");
+        console.log(finalTeamArray);
     }
 
     
