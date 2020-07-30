@@ -1,20 +1,52 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const employee = require("./lib/Employee");
-const developer = require("./lib/Developer");
-const intern = require("./lib/Intern");
-const manager = require("./lib/Manager");
+const employee = require("./lib/employee");
+const developer = require("./lib/developer");
+const intern = require("./lib/intern");
+const manager = require("./lib/manager");
 
-inquirer.prompt([
-    {
-        message: "Please enter your name",
-        name: "username"
-    },
-    {
-        message: "How many team members are in your team?",
-        name: "teamSize"
-    },
-]).then(function(data) {
-    console.log(data.teamSize);
-});
+let finalTeamArray = [];
+
+function startingPrompt() {
+    inquirer.prompt([
+        {
+            message: "What is your team manager's name?",
+            name: "name"
+        },
+        {
+            message: "What is your team member's e-mail address?",
+            name: "e-mail"
+        },
+        {
+            type: "number",
+            message: "What is your team manager's office number?",
+            name: "officeNumber"
+        },
+    ])
+        .then(function(data) {
+            console.log(data)
+            addTeamMembers();
+        });
+
+    function addTeamMembers() {
+        inquirer.prompt([
+            {
+                type: "list",
+                message: "Do you want to add more team members?",
+                choices: ["Yes, add a developer", "Yes, add an intern", "No, my team is complete"],
+                name: "addMemberData"
+            }
+        ])
+            .then(function(data) {
+                console.log(data.addMemberData);
+
+                switch (data.addMemberData) {
+                    case "Yes, add a developer":
+                          addDeveloper();
+                          break;
+                    
+                }
+            })
+    }
+}
