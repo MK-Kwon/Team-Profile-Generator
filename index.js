@@ -11,21 +11,35 @@ let finalTeamArray = [];
 function startingPrompt() {
     inquirer.prompt([
         {
+            message: "Welcome to Team Profile Generator. Please write your team name:",
+            name: "teamname"
+        },
+    ])
+        .then(function (data) {
+            const teamName = data.teamname;
+            finalTeamArray.push(teamName);
+            addManager();
+        });
+
+}
+
+function addManager(){
+    inquirer.prompt([
+        {
             message: "What is your team manager's name?",
             name: "name"
         },
         {
-            message: "What is your team member's email address?",
+            message: "What is your manager's email address?",
             name: "email"
         },
         {
             type: "number",
             message: "What is your team manager's office number?",
             name: "officeNumber"
-        },
+        }
     ])
-        .then(function (data) {
-            console.log(data);
+        .then(function(data) {
             const name = data.name;
             const id = 1;
             const email = data.email;
@@ -34,7 +48,6 @@ function startingPrompt() {
             finalTeamArray.push(teamMember);
             addTeamMembers();
         });
-
 }
 
 function addTeamMembers() {
@@ -131,10 +144,13 @@ const htmlBeginning = `
     <title>Document</title>
 </head>
 <body>
+    
+    <h1>${finalTeamArray[0]}</h1>
     `
     htmlArray.push(htmlBeginning);
 
-    for(let i = 0; i < finalTeamArray.length; i++) {
+    for(let i = 1; i < finalTeamArray.length; i++) {
+
         let object = `
         <div>
             <p>${finalTeamArray[i].title}</p>
