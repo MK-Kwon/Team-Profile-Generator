@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
+const style = require("./templates/css");
 const Employee = require("./lib/employee");
 const Developer = require("./lib/developer");
 const Intern = require("./lib/intern");
@@ -129,9 +129,8 @@ function addIntern() {
 };
 
 function compileTeam() {
-    console.log("Complete")
-    console.log(finalTeamArray);
-}
+    console.log("Complete!");  
+
 
 const htmlArray = [];
 const htmlBeginning = `
@@ -141,22 +140,33 @@ const htmlBeginning = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>${finalTeamArray[0]}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <style>
+    ${style}
+    </style>
 </head>
+
 <body>
     
-    <h1>${finalTeamArray[0]}</h1>
+    <div class="banner-bar">
+        <h1>${finalTeamArray[0]}</h1>
+    </div>
+    <div class="card-container">
     `
     htmlArray.push(htmlBeginning);
 
     for(let i = 1; i < finalTeamArray.length; i++) {
 
         let object = `
-        <div>
-            <p>${finalTeamArray[i].title}</p>
-            <p>${finalTeamArray[i].id}</p>
-            <p>${finalTeamArray[i].name}</p>
-            <p>${finalTeamArray[i].email}</p>
+        <div class="member-card>
+            <div class="card-top">
+                <h2>${finalTeamArray[i].name}</h2>
+                <h2>${finalTeamArray[i].title}</h2>
+            </div>
+            <div class="card-bottom">
+                <p>Employee ID: ${finalTeamArray[i].id}</p>
+                <p>Email: <a href="mailto:${finalTeamArray[i].email}">${finalTeamArray[i].email}</a></p>
         `
         if (finalTeamArray[i].officeNumber) {
             object += `
@@ -165,25 +175,29 @@ const htmlBeginning = `
         }
         if (finalTeamArray[i].github) {
             object +=`
-            <p>${finalTeamArray[i].github}</p>
+            <p>Github: <a href="https://github.com/${finalTeamArray[i].github}">${finalTeamArray[i].github}</a></p>
             `
         }
         if (finalTeamArray[i].school) {
             object += `
-            <p>${finalTeamArray[i].school}</p>
+            <p>School: ${finalTeamArray[i].school}</p>
             `
         }
         object += `
+        </div>
         </div>
         `
         htmlArray.push(object);
     }
     const htmlEnd =`
-    
+    </div>
 </body>
 </html>
 `
     htmlArray.push(htmlEnd);
+    fs.writeFile(`./html/${finalTeamArray[0]}.html`, htmlArray.join(""), function(err) {
 
+    });
+}
 
 startingPrompt();
