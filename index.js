@@ -159,7 +159,7 @@ const htmlBeginning = `
     for(let i = 1; i < finalTeamArray.length; i++) {
 
         let object = `
-        <div class="member-card>
+        <div class="member-card">
             <div class="card-top">
                 <h2>${finalTeamArray[i].name}</h2>
                 <h2>${finalTeamArray[i].title}</h2>
@@ -191,10 +191,11 @@ const htmlBeginning = `
     }
     const htmlEnd =`
     </div>
-</body>
-</html>
-`
+    </body>
+    </html>
+    `
     htmlArray.push(htmlEnd);
+    
     fs.writeFile(`./html/${finalTeamArray[0]}.html`, htmlArray.join(""), function(err) {
 
     });
