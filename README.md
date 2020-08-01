@@ -45,7 +45,7 @@ npx jest tests
 
 ## Tests
 
-<img src="http://drive.google.com/uc?id=19JwXTHHc1knCrtPVZ5GNn10pywBsAfG2" width="500">
+<img src="http://drive.google.com/uc?id=1wSLkYcGEQTbI2YXm_eK1SSOtVEoJQxHg" width="500">
 
 ## Author
 
