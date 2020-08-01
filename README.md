@@ -14,6 +14,8 @@
 
 > This Node CLI builds a html page which displays a team members' profile based on their input. The user inputs a team name, number of team members, thier roles and contact details etc. Based upon the input the program generates a static page organising the info.
 
+<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width:1000 height:800>
+<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width:1000 height:800>
 
 ### 🏠 [Homepage](https://github.com/MK-Kwon/Team-Profile-Generator#readme)
 
