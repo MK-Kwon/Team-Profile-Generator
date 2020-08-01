@@ -40,12 +40,12 @@ npx jest tests
 
 ## Live Demo
 
-<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width:1000 height:800>
-<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width:1000 height:800>
+<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width ="500">
+<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width ="500">
 
 ## Tests
 
-<img src="http://drive.google.com/uc?id=19JwXTHHc1knCrtPVZ5GNn10pywBsAfG2" width="100">
+<img src="http://drive.google.com/uc?id=19JwXTHHc1knCrtPVZ5GNn10pywBsAfG2" width="300">
 
 ## Author
 
