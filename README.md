@@ -34,6 +34,14 @@ Run node.js and perform an npm install to bring in all node modules. Then run th
 ```sh
 npx jest tests
 ```
+## Live Demo
+
+<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width:1000 height:800>
+<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width:1000 height:800>
+
+## Tests
+
+
 
 ## Author
 
