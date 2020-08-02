@@ -32,7 +32,7 @@ Run node.js and perform an npm install to bring in all node modules. Then run th
 ## Run tests
 
 ```sh
-npx jest tests
+npm test run
 ```
 ## Screen Shots
 
