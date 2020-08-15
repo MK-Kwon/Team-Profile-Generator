@@ -52,7 +52,7 @@ npm test run
 👤 **Min Kyung Kwon**
 
 * Github: [@MK-Kwon](https://github.com/MK-Kwon)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/min-kyung-kwon\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/min-kyung-kwon\/)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/min-kyung-kwon\/](www.linkedin.com/in/min-kyung-kwon)
 
 ## 🤝 Contributing
 
