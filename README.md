@@ -40,12 +40,12 @@ npm test run
 
 ## Live Demo
 
-<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width ="800">
-<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width ="800">
+<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width ="100%" height="auto">
+<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width ="100%" height="auto">
 
 ## Tests
 
-<img src="http://drive.google.com/uc?id=1wSLkYcGEQTbI2YXm_eK1SSOtVEoJQxHg" width="500">
+<img src="http://drive.google.com/uc?id=1wSLkYcGEQTbI2YXm_eK1SSOtVEoJQxHg" width ="100%" height="auto">
 
 ## Author
 
