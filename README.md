@@ -32,7 +32,7 @@ Run node.js and perform an npm install to bring in all node modules. Then run th
 ## Run tests
 
 ```sh
-npx jest tests
+npm test run
 ```
 ## Screen Shots
 
@@ -40,19 +40,19 @@ npx jest tests
 
 ## Live Demo
 
-<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width ="800">
-<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width ="800">
+<img src="https://media.giphy.com/media/YMFWaM57qzeF9z1Vpu/giphy.gif" width ="100%" height="auto">
+<img src="https://media.giphy.com/media/QxwdKsKXeJgrzyhuYi/giphy.gif" width ="100%" height="auto">
 
 ## Tests
 
-<img src="http://drive.google.com/uc?id=1wSLkYcGEQTbI2YXm_eK1SSOtVEoJQxHg" width="500">
+<img src="http://drive.google.com/uc?id=1wSLkYcGEQTbI2YXm_eK1SSOtVEoJQxHg" width ="100%" height="auto">
 
 ## Author
 
 👤 **Min Kyung Kwon**
 
 * Github: [@MK-Kwon](https://github.com/MK-Kwon)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/min-kyung-kwon\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/min-kyung-kwon\/)
+* LinkedIn: www.linkedin.com/in/MK-Kwon
 
 ## 🤝 Contributing
 
